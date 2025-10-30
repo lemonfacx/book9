@@ -39,8 +39,8 @@
       margin: 0 10px;
     }
     .ar-link {
-      position: absolute;
-      bottom: 16px;
+      position: fixed;
+      bottom: calc(16px + env(safe-area-inset-bottom));
       right: 16px;
       padding: 10px 16px;
       background: rgba(0, 0, 0, 0.7);
@@ -48,13 +48,13 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      z-index: 999;
     }
   </style>
 </head>
 <body>
   <div class="book">
     <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book9/main/1.png');">
-      <a class="ar-link" href="https://qrg4tf.csb.app/" target="_blank">Start AR</a>
     </div>
     <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book9/main/2.png');">
     </div>
